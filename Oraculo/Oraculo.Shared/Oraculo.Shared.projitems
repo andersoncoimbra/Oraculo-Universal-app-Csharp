@@ -16,8 +16,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Control\GerarSorte.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos.cs" />
   </ItemGroup>
 </Project>
