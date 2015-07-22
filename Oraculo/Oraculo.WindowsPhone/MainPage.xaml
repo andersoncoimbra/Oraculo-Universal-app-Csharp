@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/bgrid.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="100"/>
 
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Width="auto" Header="Seu Nome" Margin="5,0,5,0" />
+        <ComboBox x:Name="sig" ItemsSource="{Binding}" Grid.Row="1" Header="Signos" Margin="5,0,5,0">
+            
+        </ComboBox>
+        <Button Grid.Row="2"  Content="Gerar Sorte" HorizontalAlignment="Center" Click="gera"/>
+         <TextBlock x:Name="text" Grid.Row="3" FontSize="50" Text="Texto de Exemplo" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Page>

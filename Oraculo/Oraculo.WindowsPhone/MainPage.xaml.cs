@@ -1,5 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Oraculo.Control;
+using System;
+using System.Collections;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,11 +25,18 @@ namespace Oraculo
     /// </resumo>
     public sealed partial class MainPage : Page
     {
+        public ObservableCollection<string> signos = new ObservableCollection<string>();
         public MainPage()
         {
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            
+            string[] sigEx = {"Direto do Alem", "Aries", "Touro","Gemeos", "Cancer", "Goku ","Leao", "Virgem", "Libra", "Escorpiao","Sagitario", "Capricornio", "Aquario", "Peixe"};
+
+            sig.DataContext = sigEx;
+
+           
         }
 
         /// <resumo>
@@ -44,5 +54,33 @@ namespace Oraculo
             // Se estiver usando o NavigationHelper fornecido por alguns modelos,
             // este evento é manipulado para você.
         }
+
+        private void gera(object sender, RoutedEventArgs e)
+        {
+            GerarSorte sorte = new GerarSorte();
+            try
+            {
+                text.Text = sig.SelectedItem.ToString();
+                    //sorte.sorteGerada;
+                    
+            }
+            catch (Exception ex)
+            {
+               
+                text.Text = "Selecione o signo";
+                Debug.WriteLine("Signo não selecionado"+ ex);
+
+            }
+        }
+
+        private void carregaSignos() 
+        {
+            signos.Add("Escopião");
+            signos.Add("Goku");
+            signos.Add("Virgem");
+            signos.Add("Sargitario");
+            signos.Add("Touro");
+        }
+        
     }
 }
