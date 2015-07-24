@@ -17,5 +17,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Control\GerarSorte.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Signos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Aries.cs" />
   </ItemGroup>
 </Project>
