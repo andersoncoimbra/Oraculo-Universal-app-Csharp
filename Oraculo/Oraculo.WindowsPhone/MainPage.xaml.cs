@@ -25,7 +25,6 @@ namespace Oraculo
     /// </resumo>
     public sealed partial class MainPage : Page
     {
-        public ObservableCollection<string> signos = new ObservableCollection<string>();
         public MainPage()
         {
             this.InitializeComponent();
@@ -60,8 +59,9 @@ namespace Oraculo
             GerarSorte sorte = new GerarSorte();
             try
             {
-                text.Text = sig.SelectedItem.ToString();
-                    //sorte.sorteGerada;
+                text.Text = 
+                    //sig.SelectedItem.ToString();
+                    sorte.sorteGerada;
                     
             }
             catch (Exception ex)
@@ -73,14 +73,9 @@ namespace Oraculo
             }
         }
 
-        private void carregaSignos() 
-        {
-            signos.Add("Escopião");
-            signos.Add("Goku");
-            signos.Add("Virgem");
-            signos.Add("Sargitario");
-            signos.Add("Touro");
-        }
+        
+
+        
         
     }
 }
