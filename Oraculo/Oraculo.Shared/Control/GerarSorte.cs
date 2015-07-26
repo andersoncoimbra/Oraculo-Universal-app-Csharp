@@ -11,11 +11,23 @@ namespace Oraculo.Control
     {
         public string sorteGerada;
 
-        public GerarSorte()
+        public GerarSorte(int sig)
         {
-            Signo horo = new Aries();
-            sorteGerada = horo.afrasegerada;
+            Signo horo;
+            
            // sorteGerada = "Teste realizado com sucesso";
+            
+            Debug.WriteLine("Indice Selecionado: " + sig);
+
+            switch (sig){
+                case  0:  horo = new Aries();
+                    Debug.WriteLine("Caso 0");
+                    break;
+                default : horo = new Aries();
+                    Debug.WriteLine("Caso Default");
+                    break;
+                }
+            sorteGerada = horo.afrasegerada;
             Debug.WriteLine("Classe GerarSorte Completada");
         }
     }

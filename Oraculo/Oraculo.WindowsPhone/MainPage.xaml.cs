@@ -56,7 +56,7 @@ namespace Oraculo
 
         private void gera(object sender, RoutedEventArgs e)
         {
-            GerarSorte sorte = new GerarSorte();
+            GerarSorte sorte = new GerarSorte(sig.SelectedIndex);
             try
             {
                 text.Text = 

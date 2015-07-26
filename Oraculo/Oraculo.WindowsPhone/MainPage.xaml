@@ -25,7 +25,7 @@
             
         </ComboBox>
         <Button Grid.Row="2"  Content="Gerar Sorte" HorizontalAlignment="Center" Click="gera"/>
-        <TextBlock x:Name="text" Grid.Row="3" FontSize="50" Text="Texto de mjiommimikmimik nhiuhiu Exemplo" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock x:Name="text" Grid.Row="3" FontSize="50" Text="Texto de Exemplo" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
         <Button Grid.Row="4"   Content="Sobre" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300"/>
     </Grid>
 </Page>

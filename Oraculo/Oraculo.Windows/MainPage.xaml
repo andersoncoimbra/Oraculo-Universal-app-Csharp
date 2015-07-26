@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,822,0">
+    	<TextBox HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="524" Header="Nome:" TabNavigation="Cycle" PlaceholderText="Obrigatório"/>
+    	<ComboBox HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="524" Header="Seu Signo:"/>
+    	<Button Content="Qual é minha sorte?" HorizontalAlignment="Left" Margin="7,246,0,0" VerticalAlignment="Top" Width="530"/>
     </Grid>
 </Page>
