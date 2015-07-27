@@ -28,7 +28,7 @@ namespace Oraculo
         {
             this.InitializeComponent();
 			
-			string[] sigEx = { "Direto do Alem", "Aries", "Touro", "Gemeos", "Cancer", "Goku ", "Leao", "Virgem", "Libra", "Escorpiao", "Sagitario", "Capricornio", "Aquario", "Peixe" };
+			string[] sigEx = { "Direto do Alem", "Aries", "Touro", "Gemeos", "Cancer", "Leao", "Virgem", "Libra", "Escorpiao", "Sagitario", "Capricornio", "Aquario", "Peixe" };
 
              sig.DataContext = sigEx;
 			

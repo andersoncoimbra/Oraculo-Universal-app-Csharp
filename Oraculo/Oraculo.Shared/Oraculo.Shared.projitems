@@ -18,6 +18,18 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Control\GerarSorte.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Signos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Aquario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Aries.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Cancer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Capricornio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\DiretoDoAlem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Escorpiao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Gemeos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Leao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Libra.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Peixe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Sagitario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Touro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Signos\Virgem.cs" />
   </ItemGroup>
 </Project>
