@@ -20,7 +20,7 @@
             <RowDefinition Height="*" />
 
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" Width="auto" Header="Seu Nome" Margin="5,0,5,0" />
+        <TextBox x:Name="nome" Grid.Row="0" Width="auto" Header="Seu Nome" Margin="5,0,5,0" />
         <ComboBox x:Name="sig" ItemsSource="{Binding}" Grid.Row="1" Header="Signos" Margin="5,0,5,0">
             
         </ComboBox>

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Oraculo.Control;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +27,30 @@ namespace Oraculo
         public MainPage()
         {
             this.InitializeComponent();
+			
+			string[] sigEx = { "Direto do Alem", "Aries", "Touro", "Gemeos", "Cancer", "Goku ", "Leao", "Virgem", "Libra", "Escorpiao", "Sagitario", "Capricornio", "Aquario", "Peixe" };
+
+             sig.DataContext = sigEx;
+			
         }
+		
+		private void gera(object sender, RoutedEventArgs e)
+         {
+             GerarSorte sorte = new GerarSorte(sig.SelectedIndex);
+             try
+             {
+                 text.Text =
+                     //sig.SelectedItem.ToString();
+                     sorte.sorteGerada;
+
+             }
+             catch (Exception ex)
+             {
+
+                 text.Text = "Selecione o signo";
+                 Debug.WriteLine("Signo não selecionado" + ex);
+
+             }
+         }
     }
 }

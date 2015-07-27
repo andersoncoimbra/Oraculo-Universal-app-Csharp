@@ -30,12 +30,31 @@ namespace Oraculo
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            
-            string[] sigEx = {"Direto do Alem", "Aries", "Touro","Gemeos", "Cancer", "Goku ","Leao", "Virgem", "Libra", "Escorpiao","Sagitario", "Capricornio", "Aquario", "Peixe"};
+
+
+            string[] sigEx = { "Direto do Alem", "Aries", "Touro", "Gemeos", "Cancer", "Goku ", "Leao", "Virgem", "Libra", "Escorpiao", "Sagitario", "Capricornio", "Aquario", "Peixe" };
 
             sig.DataContext = sigEx;
-
            
+        }
+
+        private void gera(object sender, RoutedEventArgs e)
+        {
+            GerarSorte sorte = new GerarSorte(sig.SelectedIndex);
+            try
+            {
+                text.Text =
+                    //sig.SelectedItem.ToString();
+                    sorte.sorteGerada;
+
+            }
+            catch (Exception ex)
+            {
+
+                text.Text = "Selecione o signo";
+                Debug.WriteLine("Signo não selecionado" + ex);
+
+            }
         }
 
         /// <resumo>
@@ -52,30 +71,6 @@ namespace Oraculo
             // Evento Windows.Phone.UI.Input.HardwareButtons.BackPressed.
             // Se estiver usando o NavigationHelper fornecido por alguns modelos,
             // este evento é manipulado para você.
-        }
-
-        private void gera(object sender, RoutedEventArgs e)
-        {
-            GerarSorte sorte = new GerarSorte(sig.SelectedIndex);
-            try
-            {
-                text.Text = 
-                    //sig.SelectedItem.ToString();
-                    sorte.sorteGerada;
-                    
-            }
-            catch (Exception ex)
-            {
-               
-                text.Text = "Selecione o signo";
-                Debug.WriteLine("Signo não selecionado"+ ex);
-
-            }
-        }
-
-        
-
-        
-        
+        }                
     }
 }

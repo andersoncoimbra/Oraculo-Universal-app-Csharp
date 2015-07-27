@@ -4,6 +4,7 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
     <SharedGUID>d5b104df-5601-4cce-ac7b-2b446a9553b4</SharedGUID>
+    <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Oraculo</Import_RootNamespace>
