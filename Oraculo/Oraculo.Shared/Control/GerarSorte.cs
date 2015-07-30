@@ -32,7 +32,8 @@ namespace Oraculo.Control
                 case 4: horo = new Cancer();
                     Debug.WriteLine("Caso 1 - Signo Cancer");
                     break;
-                case 5: horo = new Leao();
+                case 5:
+                    horo = new Leao();
                     Debug.WriteLine("Caso 1 - Signo Leão");
                     break;
                 case 6: horo = new Virgem();

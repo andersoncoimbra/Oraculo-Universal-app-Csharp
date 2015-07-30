@@ -32,7 +32,7 @@ namespace Oraculo
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
 
-            string[] sigEx = { "Direto do Alem", "Aries", "Touro", "Gemeos", "Cancer", "Goku ", "Leao", "Virgem", "Libra", "Escorpiao", "Sagitario", "Capricornio", "Aquario", "Peixe" };
+            string[] sigEx = { "Direto do Alem", "Aries", "Touro", "Gemeos", "Cancer", "Leao", "Virgem", "Libra", "Escorpiao", "Sagitario", "Capricornio", "Aquario", "Peixe" };
 
             sig.DataContext = sigEx;
            
@@ -40,23 +40,37 @@ namespace Oraculo
 
         private void gera(object sender, RoutedEventArgs e)
         {
-            GerarSorte sorte = new GerarSorte(sig.SelectedIndex);
             try
             {
-                text.Text =
-                    //sig.SelectedItem.ToString();
-                    sorte.sorteGerada;
+                if (nome.Text.Length != 0)
+                {
+                    GerarSorte sorte = new GerarSorte(sig.SelectedIndex);
 
+                    textnome.Text = nome.Text;
+
+                    textSua.Text = "  Sua Sorte é :";
+                        //sig.SelectedItem.ToString();
+                    textSorte.Text =
+                        sorte.sorteGerada;
+                }
+                else 
+                {
+                    textSorte.Text = "Digite seu nome !!!";
+                }
             }
             catch (Exception ex)
             {
 
-                text.Text = "Selecione o signo";
+                textSorte.Text = "Selecione o signo";
                 Debug.WriteLine("Signo não selecionado" + ex);
 
             }
         }
 
+        private void sobre(object sender, RoutedEventArgs e) 
+        {
+            this.Frame.Navigate(typeof(sobre));
+        }
         /// <resumo>
         /// Chamado quando esta página é exibida num Frame.
         /// </resumo>

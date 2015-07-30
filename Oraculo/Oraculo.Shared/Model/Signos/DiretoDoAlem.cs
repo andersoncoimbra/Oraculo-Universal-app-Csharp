@@ -30,7 +30,6 @@ namespace Oraculo.Model.Signos
              listadefrases.Add("criticar sempre é bem mas facil do que tentar fazer melhor.' programador ' ");
              listadefrases.Add("respeitar pai e mãe sempre");
              listadefrases.Add("Ninguém vem ao pai a não ser por mim!");
-            throw new NotImplementedException();
         }
     }
 }

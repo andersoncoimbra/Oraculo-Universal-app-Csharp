@@ -20,7 +20,6 @@ namespace Oraculo.Model.Signos
              listadefrases.Add("Vencer é 90 por cento suor e 40 por cento técnica.");
              listadefrases.Add("O amor está mais próximo do que você imagina.");
              listadefrases.Add("Nunca se fique triste por se apaixonar");
-            throw new NotImplementedException();
         }
     }
 }

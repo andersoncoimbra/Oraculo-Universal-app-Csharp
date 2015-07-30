@@ -19,7 +19,6 @@ namespace Oraculo.Model.Signos
              listadefrases.Add("Quem olha para fora sonha; quem olha para dentro acorda.");
              listadefrases.Add("As pessoas se esquecerão do que você disse e do que você fez… mas nunca se esquecerão de como você as fez sentir.");
              listadefrases.Add("Espere pelo mais sábio dos conselhos: o tempo.");
-            throw new NotImplementedException();
         }
     }
 }

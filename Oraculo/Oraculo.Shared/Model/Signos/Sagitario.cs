@@ -22,7 +22,6 @@ namespace Oraculo.Model.Signos
              listadefrases.Add("A vontade das pessoas é a melhor das leis.");
              listadefrases.Add("Nós somos o que pensamos.");
 
-            throw new NotImplementedException();
         }
     }
 }

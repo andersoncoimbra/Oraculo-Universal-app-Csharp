@@ -21,7 +21,6 @@ namespace Oraculo.Model.Signos
              listadefrases.Add("O futuro pertence àqueles que acreditam na beleza de seus sonhos.");
              listadefrases.Add("Coragem é a resistência ao medo, domínio do medo, e não a ausência do medo.");
 
-            throw new NotImplementedException();
         }
     }
 }

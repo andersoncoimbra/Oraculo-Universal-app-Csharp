@@ -10,22 +10,27 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/bgrid.png"/>
+            <ImageBrush ImageSource="Assets/bgrid.png" Opacity="0.595"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
 
         </Grid.RowDefinitions>
         <TextBox x:Name="nome" Grid.Row="0" Width="auto" Header="Seu Nome" Margin="5,0,5,0" />
-        <ComboBox x:Name="sig" ItemsSource="{Binding}" Grid.Row="1" Header="Signos" Margin="5,0,5,0">
-            
+        <ComboBox x:Name="sig" ItemsSource="{Binding}" PlaceholderText="Selecione seu signo" Grid.Row="1" Header="Signos" Margin="5,0,5,0">
         </ComboBox>
         <Button Grid.Row="2"  Content="Gerar Sorte" HorizontalAlignment="Center" Click="gera"/>
-        <TextBlock x:Name="text" Grid.Row="3" FontSize="50" Text="Texto de Exemplo" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
-        <Button Grid.Row="4"   Content="Sobre" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300"/>
+        <TextBlock x:Name="textnome" Grid.Row="3" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+        <TextBlock x:Name="textSua" Grid.Row="4" FontSize="40"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+        <TextBlock x:Name="textSorte" Grid.Row="5" FontSize="50"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+
+        <Button Grid.Row="6"   Content="Sobre" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300" Click="sobre"/>
     </Grid>
 </Page>

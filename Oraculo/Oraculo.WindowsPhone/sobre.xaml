@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Oraculo.sobre"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Oraculo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/bgrid.png" Opacity="0.4"/>
+        </Grid.Background>
+        <Pivot Title="Desenvolvedores">
+        <PivotItem Header="Coimbra" FontSize="8" FontFamily="Arial Black" >
+                <Image HorizontalAlignment="Center"  VerticalAlignment="Top" Source="Assets/andersoncoimbra.png"/>
+
+            </PivotItem>
+            <PivotItem Header="Kim Peniche">
+                <Image HorizontalAlignment="Center"  VerticalAlignment="Top" Source="Assets/kimpeniche.jpg"/>
+            </PivotItem>
+            <PivotItem Header="Fanny Modesto">
+                <Image HorizontalAlignment="Center"  VerticalAlignment="Top" Source="Assets/jully.jpg"/>
+            </PivotItem>
+            <PivotItem Header="Renato Benicio">
+                <Image HorizontalAlignment="Center"  VerticalAlignment="Top" Source="Assets/renato.jpg"/>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

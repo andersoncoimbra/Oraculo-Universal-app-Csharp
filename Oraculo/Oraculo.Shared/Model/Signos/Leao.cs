@@ -20,7 +20,7 @@ namespace Oraculo.Model.Signos
              listadefrases.Add("Surpreender e ser surpreendido é o segredo do amor.");
              listadefrases.Add("Faça pequenas coisas agora e maiores coisas lhe serão confiadas cada dia.");
              listadefrases.Add("Todo mundo é capaz de denominar uma dor, exceto quem a sente.");
-            throw new NotImplementedException();
+            
         }
     }
 }
