@@ -6,14 +6,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/bgrid.png" Opacity="0.4"/>
         </Grid.Background>
         <Pivot Title="Desenvolvedores">
-        <PivotItem Header="Coimbra" FontSize="8" FontFamily="Arial Black" >
+            <PivotItem Header="Sobre">
+                <TextBlock Text="Texto sobre Oráculo"/>
+            </PivotItem>
+        <PivotItem Header="Anderson Coimbra" FontSize="8" FontFamily="Arial Black" >
                 <Image HorizontalAlignment="Center"  VerticalAlignment="Top" Source="Assets/andersoncoimbra.png"/>
 
             </PivotItem>

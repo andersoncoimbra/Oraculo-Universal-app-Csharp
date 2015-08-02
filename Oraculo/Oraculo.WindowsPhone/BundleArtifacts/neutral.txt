@@ -1,0 +1,3 @@
+MainPackage=C:\Users\Anderson\documents\visual studio 2013\Projects\Oraculo\Oraculo\Oraculo.WindowsPhone\bin\Release\Oraculo.WindowsPhone_1.1.0.0_Bundle\Oraculo.WindowsPhone_1.1.0.0_AnyCPU.appx
+SymbolPackage=C:\Users\Anderson\documents\visual studio 2013\Projects\Oraculo\Oraculo\Oraculo.WindowsPhone\AppPackages\Oraculo.WindowsPhone_1.1.0.0_Test\Oraculo.WindowsPhone_1.1.0.0_AnyCPU.appxsym
+ResourcePack=C:\Users\Anderson\documents\visual studio 2013\Projects\Oraculo\Oraculo\Oraculo.WindowsPhone\bin\Release\Oraculo.WindowsPhone_1.1.0.0_Bundle\Oraculo.WindowsPhone_1.1.0.0_scale-100.appx

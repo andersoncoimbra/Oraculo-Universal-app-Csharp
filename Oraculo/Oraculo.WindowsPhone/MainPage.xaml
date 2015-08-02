@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black"
+    >
 
     <Grid>
         <Grid.Background>
@@ -29,7 +30,7 @@
         <Button Grid.Row="2"  Content="Gerar Sorte" HorizontalAlignment="Center" Click="gera"/>
         <TextBlock x:Name="textnome" Grid.Row="3" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
         <TextBlock x:Name="textSua" Grid.Row="4" FontSize="40"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
-        <TextBlock x:Name="textSorte" Grid.Row="5" FontSize="50"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+        <TextBlock x:Name="textSorte" Grid.Row="5" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
 
         <Button Grid.Row="6"   Content="Sobre" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="300" Click="sobre"/>
     </Grid>
